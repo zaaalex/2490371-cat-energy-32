@@ -10,18 +10,18 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo-container logo-container" href="#">
-      <img class="main-header__logo" src="" alt="Логотип cat energy">
+      <img class="main-header__logo" src="#" alt="Логотип cat energy">
       <p class="main-header__title">Cat energy</p>
     </a>
     <nav class="main-header__nav main-nav">
-      <button class="main-nav__toggle">
+      <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <ul class="main-nav__site-list site-list">
-        <li class="site-list__item site-list__item--active">
-          <a href="">Главная</a>
+        <li class="site-list__item ">
+          <a href="index.html">Главная</a>
         </li>
-        <li class="site-list__item">
+        <li class="site-list__item site-list__item--active">
           <a href="#">Каталог продукции</a>
         </li>
         <li class="site-list__item">
@@ -35,7 +35,7 @@
     <section class="main-container__catalog catalog">
       <ul class="catalog__list">
         <li class="catalog__item">
-          <article class="product-card">
+          <div class="product-card">
             <a class="product-card__link" href="#">
               <img class="product-card__image" src="#" alt="Оранжевая упаковка c курицей">
               <h3 class="product-card__title">Cat energy pro 500 г</h3>
@@ -54,11 +54,11 @@
                 <dd class="product-card__description-list-item-value">700 ₽</dd>
               </div>
             </dl>
-            <button class="product-card__order-button button">Заказать</button>
-          </article>
+            <button class="product-card__order-button button" type="button">Заказать</button>
+          </div>
         </li>
         <li class="catalog__item">
-          <article class="product-card">
+          <div class="product-card">
             <a class="product-card__link" href="#">
               <img class="product-card__image" src="#" alt="Оранжевая упаковка c курицей">
               <h3 class="product-card__title">Cat energy pro 1000 г</h3>
@@ -77,11 +77,11 @@
                 <dd class="product-card__description-list-item-value">1000 ₽</dd>
               </div>
             </dl>
-            <button class="product-card__order-button button">Заказать</button>
-          </article>
+            <button class="product-card__order-button button" type="button">Заказать</button>
+          </div>
         </li>
         <li class="catalog__item">
-          <article class="product-card">
+          <div class="product-card">
             <a class="product-card__link" href="#">
               <img class="product-card__image" src="#" alt="Зеленая упаковка с рыбой">
               <h3 class="product-card__title">Cat energy pro 500 г</h3>
@@ -100,11 +100,11 @@
                 <dd class="product-card__description-list-item-value">700 ₽</dd>
               </div>
             </dl>
-            <button class="product-card__order-button button">Заказать</button>
-          </article>
+            <button class="product-card__order-button button" type="button">Заказать</button>
+          </div>
         </li>
         <li class="catalog__item">
-          <article class="product-card">
+          <div class="product-card">
             <a class="product-card__link" href="#">
               <img class="product-card__image" src="#" alt="Зеленая упаковка с рыбой">
               <h3 class="product-card__title">Cat energy pro 1000 г</h3>
@@ -123,11 +123,11 @@
                 <dd class="product-card__description-list-item-value">1000 ₽</dd>
               </div>
             </dl>
-            <button class="product-card__order-button button">Заказать</button>
-          </article>
+            <button class="product-card__order-button button" type="button">Заказать</button>
+          </div>
         </li>
         <li class="catalog__item">
-          <article class="product-card">
+          <div class="product-card">
             <a class="product-card__link" href="#">
               <img class="product-card__image" src="#" alt="Синяя упаковка с гречкой">
               <h3 class="product-card__title">Cat energy slim 500 г</h3>
@@ -146,11 +146,11 @@
                 <dd class="product-card__description-list-item-value">400 ₽</dd>
               </div>
             </dl>
-            <button class="product-card__order-button button">Заказать</button>
-          </article>
+            <button class="product-card__order-button button" type="button">Заказать</button>
+          </div>
         </li>
         <li class="catalog__item">
-          <article class="product-card">
+          <div class="product-card">
             <a class="product-card__link" href="#">
               <img class="product-card__image" src="#" alt="Синяя упаковка с гречкой">
               <h3 class="product-card__title">Cat energy slim 1000 г</h3>
@@ -169,11 +169,11 @@
                 <dd class="product-card__description-list-item-value">700 ₽</dd>
               </div>
             </dl>
-            <button class="product-card__order-button button">Заказать</button>
-          </article>
+            <button class="product-card__order-button button" type="button">Заказать</button>
+          </div>
         </li>
         <li class="catalog__item">
-          <article class="product-card">
+          <div class="product-card">
             <a class="product-card__link" href="#">
               <img class="product-card__image" src="#" alt="Фиолетовая упаковка с рисом">
               <h3 class="product-card__title">Cat energy slim 500 г</h3>
@@ -192,18 +192,19 @@
                 <dd class="product-card__description-list-item-value">500 ₽</dd>
               </div>
             </dl>
-            <button class="product-card__order-button button">Заказать</button>
-          </article>
+            <button class="product-card__order-button button" type="button">Заказать</button>
+          </div>
         </li>
         <li class="catalog__item">
-          <article class="product-card">
+          <div class="product-card">
             <section class="product-card__show-more">
-              <img class="product-card__show-more-icon" src="" alt="Плюс">
+              <h2 class="visually-hidden">Показать больше товаров</h2>
+              <img class="product-card__show-more-icon" src="#" alt="Плюс">
               <p class="product-card__show-more-title">Показать еще 100500 товаров</p>
               <p class="product-card__show-more-description">На самом деле вкусов гораздо больше!</p>
             </section>
-            <button class="product-card__show-all-button button">Показать все</button>
-          </article>
+            <button class="product-card__show-all-button button" type="button">Показать все</button>
+          </div>
         </li>
       </ul>
     </section>
@@ -214,29 +215,29 @@
           <h3 class="catalog-extra__item-title">Сахарозаменитель</h3>
           <p class="catalog-extra__item-quantity">1 упаковка (100 г)</p>
           <p class="catalog-extra__price">200 ₽</p>
-          <button class="catalog-extra__order-button button">Заказать</button>
+          <button class="catalog-extra__order-button button" type="button">Заказать</button>
         </li>
         <li class="catalog-extra__item">
           <h3 class="catalog-extra__item-title">Питьевая вода</h3>
           <p class="catalog-extra__item-quantity">5 литров</p>
           <p class="catalog-extra__price">50 ₽</p>
-          <button class="catalog-extra__order-button button">Заказать</button>
+          <button class="catalog-extra__order-button button" type="button">Заказать</button>
         </li>
         <li class="catalog-extra__item">
           <h3 class="catalog-extra__item-title">Молоко</h3>
-          <p class="product__count">1 литр</p>
+          <p class="catalog-extra__item-quantity">1 литр</p>
           <p class="catalog-extra__price">100 ₽</p>
-          <button class="catalog-extra__order-button button">Заказать</button>
+          <button class="catalog-extra__order-button button" type="button">Заказать</button>
         </li>
         <li class="catalog-extra__item">
           <h3 class="catalog-extra__item-title">Витамины</h3>
           <p class="catalog-extra__item-quantity">1 упаковка (30 г)</p>
           <p class="catalog-extra__price">300 ₽</p>
-          <button class="catalog-extra__order-button button">Заказать</button>
+          <button class="catalog-extra__order-button button" type="button">Заказать</button>
         </li>
       </ul>
       <div class="catalog-extra__promotion">
-        <img class="catalog-extra__promotion-img" src="" alt="Подарок">
+        <img class="catalog-extra__promotion-img" src="#" alt="Подарок">
         <p class="catalog-extra__promotion-title">Закажите все и получите чехол для кота в подарок!</p>
       </div>
     </section>

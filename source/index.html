@@ -10,19 +10,19 @@
   <body class="page__body">
     <header class="main-header">
       <a class="main-header__logo-container logo-container" href="#">
-        <img class="main-header__logo" src="" alt="Логотип cat energy">
+        <img class="main-header__logo" src="#" alt="Логотип cat energy">
         <p class="main-header__title">Cat energy</p>
       </a>
       <nav class="main-header__nav main-nav">
-        <button class="main-nav__toggle">
+        <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-nav__site-list site-list">
           <li class="site-list__item site-list__item--active">
-            <a href="">Главная</a>
+            <a href="#">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="#">Каталог продукции</a>
+            <a href="./catalog.html">Каталог продукции</a>
           </li>
           <li class="site-list__item">
             <a href="#">Подбор программы</a>
@@ -32,37 +32,37 @@
       <section class="main-choose-program choose-program">
         <h1 class="choose-program__title section-title">Функциональное питание для котов</h1>
         <h2 class="choose-program__slogan">Занялся собой? Займись котом!</h2>
-        <button class="choose-program__enter-button button">Подобрать программу</button>
+        <button class="choose-program__enter-button button" type="button">Подобрать программу</button>
         <img src="#" alt="Упаковка cat energy с курицей для питания котов.">
       </section>
     </header>
     <main class="main-container">
       <section class="main-container__products products">
-        <span class="visually-hidden">Список продуктов компании</span>
+        <h2 class="visually-hidden">Список продуктов компании</h2>
         <ul class="products__product-list product-list">
           <li class="product-list__item">
-            <div class="product-list-item__title-container">
-              <p class="product-list-item__title">Похудение</p>
-              <img class="product-list-item__img" src="#" alt="Кот, сидящий на задних лапах.">
+            <div class="product-list__item-main-container">
+              <p class="product-list__item-title">Похудение</p>
+              <img class="product-list__item-img" src="#" alt="Кот, сидящий на задних лапах.">
             </div>
-            <p class="product-list-item__description">Ваш кот весит больше собаки и почти утратил способность
+            <p class="product-list__item-description">Ваш кот весит больше собаки и почти утратил способность
               лазить по деревьям? Пора на диету! Cat Energy Slim поможет
               вашему питомцу сбросить лишний вес.
             </p>
-            <a class="product-list-item__href product-list-item-href__arrow-right-img arrow-right-img" href="#">
+            <a class="product-list__item-link" href="#">
               Каталог slim
             </a>
           </li>
           <li class="product-list__item">
-            <div class="product-list-item__title-container">
-              <p class="product-list-item__title">Набор массы</p>
-              <img class="product-list-item__img" src="#" alt="Пума в движении.">
+            <div class="product-list__item-main-container">
+              <p class="product-list__item-title">Набор массы</p>
+              <img class="product-list__item-img" src="#" alt="Пума в движении.">
             </div>
-            <p class="product-list-item__description">Заработать авторитет среди дворовых котов и даже собак?
+            <p class="product-list__item-description">Заработать авторитет среди дворовых котов и даже собак?
               Серия Cat Energy Pro поможет вашему коту нарастить
               необходимые мышцы!
             </p>
-            <a class="product-list-item__href product-list-item-href__arrow-right-img arrow-right-img" href="#">
+            <a class="product-list__item-link" href="#">
               Каталог pro
             </a>
           </li>
@@ -93,7 +93,7 @@
           </li>
         </ul>
       </section>
-      <section class="main__apply-history apply-history">
+      <section class="main-container__apply-history apply-history">
         <h2 class="apply-history__title section-title">Живой пример</h2>
         <p class="apply-history__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
           Cat Energy Slim. Отличный результат без изнуряющих тренировок!
