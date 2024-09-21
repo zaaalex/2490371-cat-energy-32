@@ -13,24 +13,16 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <div class="main-header__background">
-        <picture>
-          <source width="1040" height="694" type="image/png" media="(min-width: 1440px)" srcset="././images/header-background-desktop@1x.png 1x, ././images/header-background-desktop@2x.png 2x">
-          <img width="320" height="302" src="./images/header-background-mobile@1x.png" srcset="./images/header-background-mobile@2x.png" alt="Логотип cat energy">
-        </picture>
-      </div>
-      <div class="main-header__main-header-bar">
+      <div class="main-header__main-header-bar main-header-bar">
         <a class="main-header-bar__logo" href="./index.html">
           <picture>
             <source width="202" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="././images/logo-desktop.svg">
             <source width="174" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="././images/logo-tablet.svg">
-            <img src="././images/logo-desktop.svg" alt="Логотип cat energy" width="33" height="38">
+            <img width="33" height="38" src="././images/logo-desktop.svg" alt="Логотип cat energy">
           </picture>
         </a>
         <a class="main-header-bar__logo-mobile-title" href="./index.html">
-          <picture>
-            <source width="101" height="18" type="image/svg+xml" media="(max-width: 767px)" srcset="././images/logo-mobile-title.svg">
-          </picture>
+            <img width="101" height="18" src="././images/logo-mobile-title.svg" alt="Cat energy">
         </a>
         <nav class="main-header-bar__nav main-nav">
           <button class="main-nav__toggle" type="button">
@@ -50,7 +42,7 @@
         </nav>
       </div>
       <div class="main-header__info">
-        <section class="main-header__info__choose-program choose-program">
+        <section class="main-header__info-choose-program choose-program">
           <h1 class="choose-program__title section-title">Функциональное питание для котов</h1>
           <h2 class="choose-program__slogan">Занялся собой? Займись котом!</h2>
           <button class="choose-program__enter-button button" type="button">Подобрать программу</button>
@@ -69,11 +61,6 @@
           <li class="product-list__item product-list__item-slim">
             <div class="product-list__item-main-container">
               <p class="product-list__item-title">Похудение</p>
-              <picture>
-                <source class="product-list__item-img" width="100" height="106" type="image/png" media="(min-width: 1440px)" srcset="././images/cat-slim-desktop@1x.png 1x, ././images/cat-slim-desktop@2x.png 2x">
-                <source class="product-list__item-img" width="200" height="211" type="image/png" media="(min-width: 768px)" srcset="././images/cat-slim-tablet@1x.png 1x, ././images/cat-slim-tablet@2x.png 2x">
-                <img class="product-list__item-img" width="50" height="53" src="./images/cat-slim-mobile@1x.png" srcset="./images/cat-slim-mobile@2x.png 2x"  alt="Кот, сидящий на задних лапах.">
-              </picture>
             </div>
             <p class="product-list__item-description">Ваш кот весит больше собаки и почти утратил способность
               лазить по деревьям? Пора на диету! Cat Energy Slim поможет
@@ -86,11 +73,6 @@
           <li class="product-list__item product-list__item-pro">
             <div class="product-list__item-main-container">
               <p class="product-list__item-title">Набор массы</p>
-              <picture>
-                <source class="product-list__item-img" width="134" height="100" type="image/png" media="(min-width: 1440px)" srcset="././images/cat-pro-desktop@1x.png 1x, ././images/cat-pro-desktop@2x.png 2x">
-                <source class="product-list__item-img" width="268" height="200" type="image/png" media="(min-width: 768px)" srcset="././images/cat-pro-tablet@1x.png 1x, ././images/cat-pro-tablet@2x.png 2x">
-                <img class="product-list__item-img" width="67" height="50" src="./images/cat-pro-mobile@1x.png" srcset="./images/cat-pro-mobile@2x.png 2x"  alt="Пума в движении">
-              </picture>
             </div>
             <p class="product-list__item-description">Заработать авторитет среди дворовых котов и даже собак?
               Серия Cat Energy Pro поможет вашему коту нарастить
@@ -142,11 +124,11 @@
         <div class="apply-history__slider compare-slider">
           <picture>
             <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x">
-            <img width="280" height="256" class="compare-slider__image compare-slider__image--before" src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" alt="Толстый кот">
+            <img class="compare-slider__image compare-slider__image--before" width="280" height="256" src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" alt="Толстый кот">
           </picture>
           <picture>
             <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x">
-            <img width="280" height="256" class="compare-slider__image compare-slider__image--after" src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" alt="Худой кот">
+            <img class="compare-slider__image compare-slider__image--after" width="280" height="256"  src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" alt="Худой кот">
           </picture>
           <div class="compare-slider__control">
             <button class="compare-slider__control-button" type="button">
@@ -159,10 +141,10 @@
       </section>
     </main>
     <footer class="main-footer">
-      <aside class="main-footer__vendor-invite vendor-invite">
-        <h4 class="vendor-invite__title">Приглашаем к сотрудничеству дилеров!</h4>
+      <section class="main-footer__vendor-invite vendor-invite">
+        <h3 class="vendor-invite__title">Приглашаем к сотрудничеству дилеров!</h3>
         <address class="vendor-invite__description">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-      </aside>
+      </section>
       <div class="main-footer__map map">
         <picture>
           <source class="main-footer__map-image" width="1440" height="400" type="image/jpg" media="(min-width: 1440px)" srcset="images/map-desktop@1x.jpg 1x, images/map-desktop@2x.jpg 2x">
