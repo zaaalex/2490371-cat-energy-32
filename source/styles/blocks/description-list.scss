@@ -1,0 +1,12 @@
+.description-list {
+  list-style: none;
+}
+
+.description-list__item {
+  @include font-style(14px, 18px, 400, $base-font-color, $font-secondary);
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

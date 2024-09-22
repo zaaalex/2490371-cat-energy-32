@@ -1,0 +1,20 @@
+$mobile-margin: 100px;
+$tablet-margin: 30px;
+$desktop-margin: 20px;
+
+.page {
+  @include font-style(20px, 20px);
+
+  margin-left: $mobile-margin;
+  margin-right: $mobile-margin;
+
+  @media (min-width: $tablet-width) {
+    margin-left: $mobile-margin;
+    margin-right: $mobile-margin;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: $desktop-margin;
+    margin-right: $desktop-margin;
+  }
+}

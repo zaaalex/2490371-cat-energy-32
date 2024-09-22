@@ -1,0 +1,13 @@
+.choose-program__slogan {
+  @include font-style(20px, 20px, 400);
+
+  @media (max-width: 768px) {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+.choose-program__enter-button {
+  @include font-style(20px, 26px, 400, #FFFFFF);
+}

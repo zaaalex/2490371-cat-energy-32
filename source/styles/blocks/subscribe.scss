@@ -1,0 +1,5 @@
+.subscribe__form-input {
+  &::placeholder {
+    @include font-style(20px, 30px);
+  }
+}

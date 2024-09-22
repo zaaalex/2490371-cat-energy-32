@@ -1,0 +1,21 @@
+@mixin font-face($font-family, $font-src, $font-weight: 400, $font-style: normal) {
+  @font-face {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-style: $font-style;
+    font-display: swap;
+    src: $font-src;
+  }
+}
+
+@mixin font-style($font-size, $line-height, $font-weight: $base-font-weight, $color: $base-font-color, $font-family: $font-primary) {
+  font-family: $font-family;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+}
+
+@mixin set-icon($id) {
+  background-image: url("../../icons/stack.svg#" + $id);
+}

@@ -1,0 +1,12 @@
+.apply-history__description {
+  @include font-style(14px, 18px, 400, $base-font-color, $font-secondary);
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.apply-history-result {
+  @include font-style(20px, 20px, 400);
+}
