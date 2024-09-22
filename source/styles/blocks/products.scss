@@ -1,0 +1,62 @@
+.products__item--slim::before {
+  @include set-icon("cat-slim");
+}
+
+.products__item--pro::before {
+  @include set-icon("cat-pro");
+}
+
+.products__item-title {
+  @include font-style(24px, 37px, 400, $base-font-color, $font-secondary);
+  margin: 0;
+  align-self: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.products__description {
+  @include font-style(14px, 18px, 400, $base-font-color, $font-secondary);
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.products__link {
+  @include font-style(16px, 16px, 400, $base-font-color, $font-secondary);
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  padding-top: 20px;
+  border-top: 1px solid #d9d9d9;
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  &::after {
+    @include set-icon("arrow");
+    content: "";
+    margin-left: 15px;
+    width: 24px;
+    height: 12px;
+    transition: transform 0.3s linear;
+    transform-origin: left center;
+  }
+
+  &:is(:hover, :active, :focus-visible, :focus)::after {
+    transform: scaleX(1.35);
+  }
+
+  @media (min-width: $tablet-width) {
+    border-top: none;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+

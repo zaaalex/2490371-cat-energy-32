@@ -1,0 +1,27 @@
+.catalog-extra__item-title {
+  @include font-style(16px, 16px, 400, $base-font-color);
+
+  @media(min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.catalog-extra__item-quantity,
+.catalog-extra__item-price {
+  @include font-style(14px, 20px, 400, $base-font-color, $font-secondary);
+
+  @media(min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.catalog-extra__promotion-title {
+  @include font-style(16px, 20px, 400, #FFFFFF, $font-secondary);
+
+  @media(min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
