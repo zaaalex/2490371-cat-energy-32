@@ -1,7 +1,7 @@
 .product-card__title {
   @include font-style(16px, 20px, 400, #222222);
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
   }
@@ -11,7 +11,7 @@
 .product-card__description-list-item-value {
   @include font-style(12px, 16px, 400, #444444, $font-secondary);
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
   }
@@ -20,7 +20,7 @@
 .product-card__show-more-title {
   @include font-style(16px, 20px, 400, #111111);
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
   }
@@ -29,7 +29,7 @@
 .product-card__show-more-description {
   @include font-style(12px, 16px, 400, #444444, $font-secondary);
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 18px;
   }

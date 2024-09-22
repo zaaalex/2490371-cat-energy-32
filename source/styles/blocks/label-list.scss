@@ -1,7 +1,7 @@
 .label-list__item-title {
   @include font-style(24px, 24px, 400);
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
   }
@@ -10,7 +10,7 @@
 .label-list__item-description {
   @include font-style(12px, 12px, 400, $base-font-color, $font-secondary);
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 14px;
   }

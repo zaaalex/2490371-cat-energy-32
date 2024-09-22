@@ -2,7 +2,7 @@
   @include font-style(16px, 20px, 400);
   text-transform: uppercase;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;
   }
@@ -12,7 +12,7 @@
   @include font-style(14px, 20px, 400, $base-font-color, $font-secondary);
   font-style: normal;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 16px;
   }
 }
