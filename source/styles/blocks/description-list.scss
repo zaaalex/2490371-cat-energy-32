@@ -10,3 +10,38 @@
     line-height: 24px;
   }
 }
+
+.description-list__item-icon {
+  display: block;
+  height: 60px;
+  width: 60px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #68B738;
+
+  @media (min-width: $tablet-width) {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+.description-list__item-icon--icon-leaf {
+  @include set-background-icon('leaf');
+  background-size: 24.8px 28px;
+}
+
+.description-list__item-icon--icon-eat {
+  @include set-background-icon('eat');
+  background-size: 25.95px 28.68px;
+}
+
+.description-list__item-icon--icon-cup {
+  @include set-background-icon('cup');
+  background-size: 25.8px 30px;
+}
+
+.description-list__item-icon--icon-clock {
+  @include set-background-icon('clock');
+  background-size: 26px 31px;
+}

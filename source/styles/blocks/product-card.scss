@@ -17,6 +17,21 @@
   }
 }
 
+.product-card__show-more {
+  &::before {
+    @include set-background-icon("plus");
+    width: 30px;
+    height: 30px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      width: 60px;
+      height: 60px;
+    }
+  }
+}
+
 .product-card__show-more-title {
   @include font-style(16px, 20px, 400, #111111);
 
