@@ -16,6 +16,26 @@
   color: $color;
 }
 
-@mixin set-icon($id) {
+@mixin set-background-icon($id) {
   background-image: url("../../icons/stack.svg#" + $id);
+  content: "";
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@mixin set-mask-icon($id) {
+  mask-image: url("../../icons/stack.svg#" + $id);
+}
+
+@mixin background-image-with-gradient($imageName, $gradientStartColor, $gradientEndColor) {
+  background: linear-gradient($gradientStartColor, $gradientEndColor), url("../../images/" + $imageName + "@1x.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media ((min-device-pixel-ratio: 2)) {
+    background-image: url("../../images/" + $imageName + "@2x.jpg");
+  }
 }
