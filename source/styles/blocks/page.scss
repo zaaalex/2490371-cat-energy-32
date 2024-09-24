@@ -1,3 +1,4 @@
+/*
 $mobile-margin: 100px;
 $tablet-margin: 30px;
 $desktop-margin: 20px;
@@ -18,3 +19,21 @@ $desktop-margin: 20px;
     margin-right: $desktop-margin;
   }
 }
+*/
+
+
+.page__body {
+  display: flex;
+  flex-direction: column;
+}
+
+.page__main {
+  display: flex;
+  flex-direction: column;
+}
+
+.page__footer {
+  display: flex;
+  flex-direction: column;
+}
+
