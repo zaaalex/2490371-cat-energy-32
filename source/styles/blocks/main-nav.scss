@@ -1,0 +1,50 @@
+.main-nav__toggle {
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__toggle--open {
+  @include set-image-icon("menu-open");
+}
+
+.main-nav__toggle--close {
+  @include set-image-icon("menu-close");
+}
+
+.main-nav__site-list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: center;
+    gap: 13px;
+  }
+}
+
+.main-nav--open {
+  position: absolute;
+  opacity: 1;
+  height: auto;
+  visibility: visible;
+  background-color: #ffffff;
+  left: 0;
+  right: 0;
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
+  }
+}
+
+.main-nav--open {
+  position: static;
+  opacity: 1;
+  height: auto;
+  visibility: visible;
+}

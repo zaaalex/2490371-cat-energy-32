@@ -16,8 +16,16 @@
   color: $color;
 }
 
-@mixin set-background-icon($id) {
+@mixin set-mask-icon($id) {
+  mask-image: url("../../icons/stack.svg#" + $id);
+}
+
+@mixin set-image-icon($id) {
   background-image: url("../../icons/stack.svg#" + $id);
+}
+
+@mixin set-background-icon($id) {
+  @include set-image-icon($id);
   content: "";
   display: block;
   background-position: center;
@@ -25,15 +33,12 @@
   background-size: contain;
 }
 
-@mixin set-mask-icon($id) {
-  mask-image: url("../../icons/stack.svg#" + $id);
-}
-
 @mixin background-image-with-gradient($imageName, $gradientStartColor, $gradientEndColor) {
-  background: linear-gradient($gradientStartColor, $gradientEndColor), url("../../images/" + $imageName + "@1x.jpg");
+  background: linear-gradient(rgba($gradientStartColor, 0.85), rgba($gradientEndColor, 0.85)), url("../../images/" + $imageName + "@1x.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-color: #68b738d9;
 
   @media ((min-device-pixel-ratio: 2)) {
     background-image: url("../../images/" + $imageName + "@2x.jpg");

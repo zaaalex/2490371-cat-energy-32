@@ -14,29 +14,29 @@
 <body class="page__body">
   <header class="page__header page-header">
     <div class="page-header__page-header-bar page-header-bar">
-      <a class="page-header-bar__logo link" href="./index.html">
-        <picture>
-          <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="././images/logo-desktop.svg">
-          <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="././images/logo-tablet.svg">
-          <img width="33" height="38" src="././images/logo-desktop.svg" alt="Логотип cat energy">
-        </picture>
-      </a>
-      <a class="page-header-bar__logo-title link" href="./index.html">
-        <picture>
-          <source width="118" height="21" type="image/svg+xml" media="(min-width: 1440px)" srcset="././images/logo-title-desktop.svg">
-          <source width="101" height="18" type="image/svg+xml" media="(min-width: 768px)" srcset="././images/logo-title-tablet.svg">
-          <img width="101" height="20" src="././images/logo-title-mobile.svg" alt="Cat energy">
-        </picture>
-      </a>
-      <nav class="page-header-bar__nav main-nav">
-        <button class="main-nav__toggle" type="button">
+      <div class="page-header-bar__container">
+        <a class="page-header-bar__logo link" href="./index.html">
+          <picture>
+            <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="././images/logo-desktop.svg">
+            <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="././images/logo-tablet.svg">
+            <img class="page-header-bar__logo-image" width="33" height="38" src="././images/logo-mobile.svg" alt="Логотип cat energy">
+          </picture>
+          <picture>
+            <source width="118" height="21" type="image/svg+xml" media="(min-width: 1440px)" srcset="././images/logo-title-desktop.svg">
+            <source width="101" height="18" type="image/svg+xml" media="(min-width: 768px)" srcset="././images/logo-title-tablet.svg">
+            <img width="101" height="20" src="././images/logo-title-mobile.svg" alt="Cat energy">
+          </picture>
+        </a>
+        <button class="main-nav__toggle main-nav__toggle--open" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
+      </div>
+      <nav class="page-header-bar__nav main-nav main-nav--open">
         <ul class="main-nav__site-list site-list list">
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--current">
             <a class="site-list__link link" href="./index.html">Главная</a>
           </li>
-          <li class="site-list__item site-list__item--current">
+          <li class="site-list__item">
             <a class="site-list__link link" href="./catalog.html">Каталог продукции</a>
           </li>
           <li class="site-list__item">
@@ -287,36 +287,31 @@
         <img class="page-footer__map-image" width="320" height="362" src="images/map-mobile@1x.jpg" srcset="images/map-mobile@2x.jpg 2x" alt="Адрес на карте">
       </picture>
     </div>
-    <section class="footer-container footer">
+    <section class="page-footer__contacts contacts">
       <h2 class="visually-hidden">Связь с нами.</h2>
-      <a class="footer-container__logo link" href="./index.html">
-        <picture>
-          <source width="118" height="21" type="image/svg+xml" media="(min-width: 1440px)" srcset="././images/logo-title-desktop.svg">
-          <source width="101" height="18" type="image/svg+xml" media="(min-width: 768px)" srcset="././images/logo-title-tablet.svg">
-          <img width="101" height="20" src="././images/logo-title-mobile.svg" alt="Cat energy">
-        </picture>
+      <a class="contacts__item contacts__logo link" href="./index.html">
       </a>
-      <ul class="contacts__social-list social-list">
+      <ul class="contacts__item contacts__social-list social-list list">
         <li class="social-list__item">
-          <a class="social-link social-link--icon-vk link" href="#">
+          <a class="social-list__item-link social-list__item-link--icon-vk link" href="#">
             <span class="visually-hidden">Мы в ВКонтакте</span>
           </a>
         </li>
         <li class="social-list__item">
-          <a class="social-link social-link--icon-youtube link" href="#">
+          <a class="social-list__item-link social-list__item-link--icon-youtube link" href="#">
             <span class="visually-hidden">Мы на Youtube</span>
           </a>
         </li>
         <li class="social-list__item">
-          <a class="social-link social-link--icon-tg link" href="#">
+          <a class="social-list__item-link social-list__item-link--icon-tg link" href="#">
             <span class="visually-hidden">Мы в телеграмм</span>
           </a>
         </li>
       </ul>
-      <div class="page-footer__copyright copyright">
-        <a class="link" href="https://htmlacademy.ru/">
-          <p class="copyright__title">HTML Academy</p>
-          <img class="copyright__logo" width="27" height="35" src="./images/logo-html-academy@1x.png" srcset="./images/logo-html-academy@2x.png 2x" alt="Логотип HTML Academy">
+      <div class="contacts__item contacts__copyright copyright">
+        <a class="copyright__link link" href="https://htmlacademy.ru/">
+          <p class="copyright__link-title">HTML Academy</p>
+          <img class="copyright__link-logo" width="27" height="35" src="./images/logo-html-academy@1x.png" srcset="./images/logo-html-academy@2x.png 2x" alt="Логотип HTML Academy">
         </a>
       </div>
     </section>
