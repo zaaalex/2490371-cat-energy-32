@@ -12,20 +12,6 @@
   }
 }
 
-.choose-program__enter-button {
-  @include font-style(20px, 26px, 400, #ffffff);
-  padding: 12px 0 8px;
-  text-align: center;
-  grid-column: 2 / -2;
-
-  @media (min-width: $tablet-width) {
-    margin-left: 90px;
-    padding: 14px 27px;
-    place-self: start;
-    grid-row: 3 / 4;
-  }
-}
-
 .choose-program__title {
   margin: 0;
   margin-bottom: 24px;

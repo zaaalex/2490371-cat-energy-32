@@ -38,6 +38,40 @@
   }
 }
 
+.page-header__enter-button {
+  @include font-style(20px, 26px, 400, #ffffff);
+  padding: 12px 0 8px;
+  text-align: center;
+  grid-column: 2 / -2;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 90px;
+    padding: 14px 27px;
+    place-self: start;
+    grid-row: 3 / 4;
+  }
+}
+
+.page-header-bar__toggle {
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.page-header-bar__toggle--open {
+  @include set-image-icon("menu-open");
+}
+
+.page-header-bar__toggle--close {
+  @include set-image-icon("menu-close");
+}
+
 .page-header__info {
   grid-area: 2 / 2 / 3 / 3;
   padding: 27px 0;
