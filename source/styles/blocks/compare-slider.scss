@@ -26,7 +26,7 @@
   }
 
   &::after {
-    @include set-mask-icon('slider-control');
+    @include set-mask-icon("slider-control");
     content: "";
     position: absolute;
     display: block;

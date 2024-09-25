@@ -22,7 +22,7 @@
   transition: background-color 0.3s ease-in-out;
 
   &:is(:hover, :focus-visible, :focus) {
-    background-color: #68B738;
+    background-color: #68b738;
   }
 
   &:active {
@@ -31,13 +31,13 @@
 }
 
 .social-list__item-link--icon-tg {
-  @include set-mask-icon('tg');
+  @include set-mask-icon("tg");
 }
 
 .social-list__item-link--icon-vk {
-  @include set-mask-icon('vk');
+  @include set-mask-icon("vk");
 }
 
 .social-list__item-link--icon-youtube {
-  @include set-mask-icon('youtube');
+  @include set-mask-icon("youtube");
 }

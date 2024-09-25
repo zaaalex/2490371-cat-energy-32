@@ -10,7 +10,7 @@
 
   &::before {
     @include background-image-with-gradient("hero-mobile", #68b738d9, #68b738d9);
-    content: '';
+    content: "";
     grid-area: 2 / 1 / 4 / -1;
   }
 
@@ -33,7 +33,7 @@
       @include background-image-with-gradient("hero-desktop", #68b738d9, #68b738d9);
       display: block;
       background-position: 100%;
-      grid-area: 1 / 5 / -1 / -1;;
+      grid-area: 1 / 5 / -1 / -1;
     }
   }
 }

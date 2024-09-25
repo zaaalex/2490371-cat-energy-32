@@ -3,7 +3,7 @@
 }
 
 .contacts__item {
-  margin: 20px 0 20px 0;
+  margin: 20px 0;
 
   &:not(:last-child)::after {
     content: "";
@@ -47,7 +47,7 @@
   }
 
   &:is(:hover, :focus-visible, :focus) {
-    background-color: #68B738;
+    background-color: #68b738;
   }
 
   &:active {

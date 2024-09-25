@@ -1,32 +1,4 @@
 .label-list__item-title {
-  @include font-style(24px, 24px, 400);
-
-  @media (min-width: $tablet-width) {
-    font-size: 30px;
-    line-height: 37px;
-  }
-}
-
-.label-list__item-description {
-  @include font-style(12px, 12px, 400, $base-font-color, $font-secondary);
-
-  @media (min-width: $tablet-width) {
-    font-size: 14px;
-    line-height: 14px;
-  }
-}
-
-.label-list__item {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 124px;
-
-  @media (min-width: $tablet-width) {
-    flex-basis: 162px;
-  }
-}
-
-.label-list__item-title {
   @include font-style(24px, 24px, 400, $base-font-color);
   padding: 15px 14px 14px;
   text-transform: uppercase;
@@ -38,6 +10,16 @@
     padding: 14px 14px 17px;
     font-size: 30px;
     line-height: 37px;
+  }
+}
+
+.label-list__item {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 124px;
+
+  @media (min-width: $tablet-width) {
+    flex-basis: 162px;
   }
 }
 

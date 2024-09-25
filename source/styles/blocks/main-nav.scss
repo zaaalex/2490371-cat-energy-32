@@ -29,20 +29,6 @@
 }
 
 .main-nav--open {
-  position: absolute;
-  opacity: 1;
-  height: auto;
-  visibility: visible;
-  background-color: #ffffff;
-  left: 0;
-  right: 0;
-
-  @media (min-width: $desktop-width) {
-    background-color: transparent;
-  }
-}
-
-.main-nav--open {
   position: static;
   opacity: 1;
   height: auto;

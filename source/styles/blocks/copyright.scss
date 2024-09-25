@@ -26,7 +26,7 @@
   transition: background-color 0.3s ease-in-out;
 
   &:is(:hover, :focus-visible, :focus) {
-    color: #68B738;
+    color: #68b738;
   }
 
   &:active {
@@ -35,7 +35,7 @@
 }
 
 .copyright__link-logo {
-  @include set-mask-icon('html-academy');
+  @include set-mask-icon("html-academy");
   display: flex;
   margin-right: 20px;
 
@@ -46,7 +46,7 @@
   transition: background-color 0.3s ease-in-out;
 
   &:is(:hover, :focus-visible, :focus) {
-    background-color: #68B738;
+    background-color: #68b738;
   }
 
   &:active {
