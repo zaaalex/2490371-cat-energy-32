@@ -1,13 +1,41 @@
 .choose-program__slogan {
-  @include font-style(20px, 20px, 400);
+  @include font-style(14px, 14px, 400);
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
 
-  @media (max-width: 768px) {
-    color: #ffffff;
-    font-size: 14px;
-    line-height: 14px;
+  @media (min-width: $tablet-width) {
+    @include font-style(20px, 20px, 400, #000000);
+    margin-bottom: 22px;
+    text-align: start;
   }
 }
 
 .choose-program__enter-button {
-  @include font-style(20px, 26px, 400, #FFFFFF);
+  @include font-style(20px, 26px, 400, #ffffff);
+  padding: 12px 0 8px;
+  text-align: center;
+  grid-column: 2 / -2;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 90px;
+    padding: 14px 27px;
+    place-self: start;
+    grid-row: 3 / 4;
+  }
+}
+
+.choose-program__title {
+  margin: 0;
+  margin-bottom: 24px;
+  text-align: center;
+  color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    @include font-style(60px, 60px, 400, #000000);
+    margin-bottom: 40px;
+    max-width: 570px;
+    text-align: start;
+  }
 }

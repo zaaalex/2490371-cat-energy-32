@@ -1,9 +1,18 @@
 .social-list {
   list-style: none;
+  display: flex;
+}
+
+.social-list__item {
+  display: flex;
+
+  &:not(:last-child) {
+    margin-right: 24.04px;
+  }
 }
 
 .social-list__item-link {
-  display: block;
+  display: flex;
   width: 28px;
   height: 22px;
   mask-position: center;
@@ -13,7 +22,7 @@
   transition: background-color 0.3s ease-in-out;
 
   &:is(:hover, :focus-visible, :focus) {
-    background-color: #68B738;
+    background-color: #68b738;
   }
 
   &:active {
@@ -22,13 +31,13 @@
 }
 
 .social-list__item-link--icon-tg {
-  @include set-mask-icon('tg');
+  @include set-mask-icon("tg");
 }
 
 .social-list__item-link--icon-vk {
-  @include set-mask-icon('vk');
+  @include set-mask-icon("vk");
 }
 
 .social-list__item-link--icon-youtube {
-  @include set-mask-icon('youtube');
+  @include set-mask-icon("youtube");
 }

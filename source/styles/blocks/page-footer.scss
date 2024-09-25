@@ -1,0 +1,24 @@
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-footer__contacts {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 240px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    height: 240px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 169px;
+  }
+}

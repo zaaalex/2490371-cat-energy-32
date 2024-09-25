@@ -1,0 +1,37 @@
+.work-description {
+  margin-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.work-description__description-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    flex-flow: row wrap;
+    gap: 37px 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 37px 80px;
+  }
+}
+
+.work-description__title {
+  margin: 0 0 41px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 31px;
+  }
+}
+
