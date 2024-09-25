@@ -1,0 +1,75 @@
+.compare-slider__control-button {
+  position: absolute;
+  left: 49%;
+  display: block;
+  padding: 0;
+  width: 4px;
+  height: 100%;
+  border-radius: 2px;
+  background-color: #666666;
+  border: none;
+  transition: background-color 0.3s ease-in-out;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: block;
+    background-color: #ffffff;
+    border: 2px solid #666666;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    transform: translate(-50%, -50%);
+    transition: border-color 0.3s ease-in-out;
+  }
+
+  &::after {
+    @include set-mask-icon('slider-control');
+    content: "";
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: 50%;
+
+    background-color: #666666;
+    width: 24px;
+    height: 18px;
+    transform: translate(-50%, -50%);
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  &:is(:hover, :focus-visible, :focus) {
+    background-color: #68b738;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:is(:hover, :focus-visible, :focus)::before {
+    border-color: #68b738;
+  }
+
+  @media (min-width: $tablet-width) {
+    left: 49.5%;
+  }
+}
+
+.compare-slider__image {
+  display: block;
+  object-fit: cover;
+  height: 100%;
+  overflow: hidden;
+}
+
+.compare-slider__image--before {
+  object-position: left;
+  width: 100%;
+}
+
+.compare-slider__image--after {
+  object-position: right;
+  width: 100%;
+}

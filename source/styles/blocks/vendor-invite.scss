@@ -1,6 +1,8 @@
 .vendor-invite__title {
   @include font-style(16px, 20px, 400);
+  margin: 0;
   text-transform: uppercase;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -11,8 +13,70 @@
 .vendor-invite__description {
   @include font-style(14px, 20px, 400, $base-font-color, $font-secondary);
   font-style: normal;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
+    width: 100%;
+    line-height: 20px;
+    text-align: right;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 5px;
+    text-align: start;
+    width: 100%;
+  }
+}
+
+.vendor-invite {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 280px;
+  padding: 25px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 61px 40px;
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    padding: 61px 80px;
+    margin-inline: unset;
+    grid-area: 2 / 2 / 3 / 3;
+    grid-template-columns: 1fr 160px;
+    background-color: #ffffff;
+    width: 565px;
+    z-index: 1;
+  }
+}
+
+.vendor-invite__description-street {
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    margin-bottom: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 18px;
+  }
+}
+
+.vendor-invite__container-address {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 35%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.vendor-invite__container-title {
+  width: 100%;
 }

@@ -15,3 +15,111 @@
     line-height: 14px;
   }
 }
+
+.label-list__item {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 124px;
+
+  @media (min-width: $tablet-width) {
+    flex-basis: 162px;
+  }
+}
+
+.label-list__item-title {
+  @include font-style(24px, 24px, 400, $base-font-color);
+  padding: 15px 14px 14px;
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px solid #cdcdcd;
+  border-radius: 5px;
+
+  @media (min-width: $tablet-width) {
+    padding: 14px 14px 17px;
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+.label-list__item-description {
+  @include font-style(12px, 12px, 400,  $base-font-color, $font-secondary);
+  display: block;
+  padding: 0 10px;
+  margin: -0.7em 19px 0;
+  align-self: center;
+  text-align: center;
+  background-color: #eaeaea;
+
+  @media (min-width: $tablet-width) {
+    margin: -0.5em 8px 0;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #ffffff;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: linear-gradient(0deg, #f2f2f2, 462px, #ffffff 462px);
+  }
+}
+
+.label-list__item--total {
+  display: flex;
+  flex-basis: auto;
+  flex-flow: row;
+  justify-content: center;
+  gap: 0.3em;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    text-align: right;
+    flex-direction: column;
+    flex-basis: 290px;
+    margin-left: auto;
+    margin-right: 1px;
+    gap: 13px;
+    width: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-basis: 357px;
+    margin-left: 0;
+  }
+}
+
+.label-list__item-title--total {
+  @include font-style(14px, 20px, 400);
+  padding: 0;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    text-align: end;
+    font-size: 20px;
+    line-height: 14px;
+    margin-bottom: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.label-list__item-description--total {
+  @include font-style(14px, 20px, 400);
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  align-self: auto;
+
+  @media (min-width: $tablet-width) {
+    text-align: end;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 30px;
+  }
+}

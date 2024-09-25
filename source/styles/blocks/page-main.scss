@@ -1,0 +1,43 @@
+.page-main__subscribe {
+  padding: 10px 0 41px;
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 0 79px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 103px;
+  }
+}
+
+.page-main__vendor-invite {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-rows: 95px auto 100px;
+    grid-template-columns: 1fr 1220px 1fr;
+  }
+}
+
+.page-main__map {
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: 1 / 1 / -1 / -1;
+    height: 100%;
+  }
+}
+
+.page-main__map-image {
+  margin-inline: auto;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+

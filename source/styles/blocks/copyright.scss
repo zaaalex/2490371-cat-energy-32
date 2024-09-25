@@ -11,7 +11,7 @@
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    justify-content: flex-end;
+    gap: 23px;
   }
 }
 
@@ -31,14 +31,6 @@
 
   &:active {
     opacity: 0.6;
-  }
-
-  @media (min-width: $tablet-width) {
-    margin: 120px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 381px;
   }
 }
 
