@@ -1,7 +1,7 @@
 .apply-history__description {
   @include font-style(14px, 18px, 400, $base-font-color, $font-secondary);
   grid-column: 2 / 3;
-  margin: 0 0 20px;
+  margin: 0 0 21px;
   width: 100%;
 
   @media (min-width: $tablet-width) {
@@ -76,7 +76,7 @@
 
 .apply-history__title {
   grid-area: 1 / 2 / 2 / 3;
-  margin: 0 0 39px;
+  margin: 0 0 42px;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 60px;

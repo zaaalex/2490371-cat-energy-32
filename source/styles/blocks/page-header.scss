@@ -10,6 +10,7 @@
 
   &::before {
     @include background-image-with-gradient("hero-mobile", #68b738d9, #68b738d9);
+    height: 302px;
     content: "";
     grid-area: 2 / 1 / 4 / -1;
   }
@@ -32,6 +33,7 @@
     &::before {
       @include background-image-with-gradient("hero-desktop", #68b738d9, #68b738d9);
       display: block;
+      height: 694px;
       background-position: 100%;
       grid-area: 1 / 5 / -1 / -1;
     }
@@ -39,12 +41,14 @@
 }
 
 .page-header__enter-button {
-  @include font-style(20px, 26px, 400, #ffffff);
-  padding: 12px 0 8px;
+  @include font-style(16px, 20px, $base-font-weight, #ffffff);
+  padding: 12px 0 10px;
   text-align: center;
   grid-column: 2 / -2;
 
   @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
     margin-left: 90px;
     padding: 14px 27px;
     place-self: start;

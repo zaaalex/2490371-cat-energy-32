@@ -84,7 +84,7 @@
 }
 
 .products__item-title {
-  @include font-style(24px, 37px, 400, $base-font-color, $font-secondary);
+  @include font-style(24px, 37px);
   margin: 0;
   align-self: center;
   text-transform: uppercase;
@@ -115,7 +115,7 @@
 }
 
 .products__link {
-  @include font-style(16px, 16px, 400, $base-font-color, $font-secondary);
+  @include font-style(16px, 16px);
   display: flex;
   align-items: center;
   text-transform: uppercase;

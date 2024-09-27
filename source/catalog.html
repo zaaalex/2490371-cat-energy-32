@@ -24,10 +24,10 @@
           <picture>
             <source width="118" height="21" type="image/svg+xml" media="(min-width: 1440px)" srcset="././images/logo-title-desktop.svg">
             <source width="101" height="18" type="image/svg+xml" media="(min-width: 768px)" srcset="././images/logo-title-tablet.svg">
-            <img width="101" height="20" src="././images/logo-title-mobile.svg" alt="Cat energy">
+            <img class="page-header-bar__logo-title logo-title" width="101" height="20" src="././images/logo-title-mobile.svg" alt="Cat energy">
           </picture>
         </a>
-        <button class="page-header-bar__toggle page-header-bar__toggle--open" type="button">
+        <button class="visually-hidden page-header-bar__toggle page-header-bar__toggle--open" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
@@ -321,7 +321,7 @@
     <section class="page-main__vendor-invite">
       <div class="vendor-invite">
         <div class="vendor-invite__container-title">
-          <h3 class="vendor-invite__title">Приглашаем к сотрудничеству дилеров!</h3>
+          <h3 class="vendor-invite__title">Приглашаем <br> к сотрудничеству <br> дилеров!</h3>
         </div>
         <div class="vendor-invite__container-address">
           <address class="vendor-invite__description">
@@ -345,7 +345,13 @@
   <footer class="page__footer page-footer">
     <section class="page-footer__contacts contacts">
       <h2 class="visually-hidden">Связь с нами.</h2>
-      <a class="contacts__item contacts__logo link" href="./index.html"></a>
+      <a class="contacts__item contacts__logo link" href="./index.html">
+        <picture>
+          <source width="118" height="21" type="image/svg+xml" media="(min-width: 1440px)" srcset="././images/logo-title-desktop.svg">
+          <source width="101" height="18" type="image/svg+xml" media="(min-width: 768px)" srcset="././images/logo-title-tablet.svg">
+          <img width="101" height="20" class="contacts__logo-title logo-title" src="././images/logo-title-mobile.svg" alt="Cat energy">
+        </picture>
+      </a>
       <ul class="contacts__item contacts__social-list social-list list">
         <li class="social-list__item">
           <a class="social-list__item-link social-list__item-link--icon-vk link" href="#">

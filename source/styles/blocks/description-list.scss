@@ -78,7 +78,7 @@
 .description-list__description {
   @include font-style(14px, 18px, 400, $base-font-color, $font-secondary);
   margin: 0;
-  width: 71%;
+  width: 69%;
 
   @media (min-width: $tablet-width) {
     width: 100%;
