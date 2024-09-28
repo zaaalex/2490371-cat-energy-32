@@ -44,6 +44,10 @@
     margin-right: 13px;
   }
 
+  @media (min-width: $desktop-width) {
+    margin-right: 14px;
+  }
+
   &:is(:hover, :focus-visible, :focus) {
     opacity: 0.6;
   }
@@ -65,8 +69,13 @@
     visibility: visible;
     opacity: 1;
     height: auto;
-    margin-left: auto;
+    margin-left: 84px;
+    margin-top: 5px;
     max-width: 500px;
     width: unset;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 531.5px;
   }
 }

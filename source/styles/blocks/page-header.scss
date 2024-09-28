@@ -54,6 +54,10 @@
     place-self: start;
     grid-row: 3 / 4;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
+  }
 }
 
 .page-header-bar__toggle {
@@ -86,6 +90,8 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 2 / 4;
+    margin-left: 80px;
+    padding: 66px 0 30px 0;
   }
 }
 

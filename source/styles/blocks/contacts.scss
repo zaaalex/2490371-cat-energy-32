@@ -3,21 +3,53 @@
 }
 
 .contacts__item {
-  &:not(:last-child) {
-    border-bottom: 1px solid rgba(217, 217, 217, 1);
+  @media (max-width: $tablet-width - 1) {
+    width: calc(100% - 40px);
+
+    padding-top: 19px;
+    padding-bottom: 20px;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid rgba(217, 217, 217, 1);
+    }
+
+    &:first-child {
+      padding-top: 40px;
+    }
+
+    &:last-child {
+      padding-top: 11px;
+    }
   }
 
-  width: calc(100% - 40px);
+  @media (min-width: $tablet-width) {
+    &:first-child {
+      padding-left: 30px;
+    }
 
-  padding-top: 19px;
-  padding-bottom: 20px;
-
-  &:first-child {
-    padding-top: 40px;
+    &:last-child {
+      padding-right: 30px;
+    }
   }
 
-  &:last-child {
-    padding-top: 11px;
+  @media (min-width: $desktop-width) {
+    &:first-child {
+      padding-left: 110px;
+    }
+
+    &:last-child {
+      padding-right: 110px;
+    }
+  }
+}
+
+.contacts__social-list {
+  @media (min-width: $tablet-width) {
+    padding-right: 125px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-right: 381px;
   }
 }
 
@@ -28,8 +60,8 @@
   padding-bottom: 13px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 110px;
-    padding: 0 160px 0 110px;
+    padding: 0 160px 0 30px;
+    justify-content: flex-start;
   }
 
   @media (min-width: $desktop-width) {
@@ -47,6 +79,7 @@
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    width: 168px;
+    flex: 1;
+    justify-content: space-between;
   }
 }

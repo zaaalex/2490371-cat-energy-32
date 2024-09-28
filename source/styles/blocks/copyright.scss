@@ -9,10 +9,6 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-
-  @media (min-width: $tablet-width) {
-    gap: 23px;
-  }
 }
 
 .copyright__link-title {
@@ -20,7 +16,9 @@
   text-transform: none;
   display: flex;
 
-  margin-left: 20px;
+  @media (max-width: $tablet-width - 1) {
+    margin-left: 20px;
+  }
 
   color: #666666;
   transition: background-color 0.3s ease-in-out;
@@ -37,7 +35,10 @@
 .copyright__link-logo {
   @include set-mask-icon("html-academy");
   display: flex;
-  margin-right: 20px;
+
+  @media (max-width: $tablet-width - 1) {
+    margin-right: 20px;
+  }
 
   mask-position: center;
   mask-repeat: no-repeat;

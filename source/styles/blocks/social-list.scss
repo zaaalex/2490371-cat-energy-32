@@ -6,6 +6,12 @@
 .social-list__item {
   display: flex;
 
+  @media (min-width: $tablet-width)
+  {
+    width: 28px;
+    height: 22px;
+  }
+
   &:not(:last-child) {
     margin-right: 24.04px;
   }
@@ -40,4 +46,7 @@
 
 .social-list__item-link--icon-youtube {
   @include set-mask-icon("youtube");
+
+  width: 24px;
+  height: 18.68px;
 }

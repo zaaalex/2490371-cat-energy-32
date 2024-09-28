@@ -10,15 +10,15 @@
     opacity: 0.3;
   }
 
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 29.64px;
     color: #ffffff;
-  }
-
-  @media (min-width: $tablet-width) {
-    font-size: 18px;
-    line-height: 24px;
   }
 }
 
