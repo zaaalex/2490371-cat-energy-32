@@ -14,13 +14,19 @@
 }
 
 .subscribe__form-button {
+  @include font-style(20px, 26px, $base-font-weight, rgba(255, 255, 255, 1));
   height: 56px;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 430px;
+  }
 }
 
 .subscribe__form-input {
-  padding: 13px;
+  @include font-style(20px, 30px);
   margin-bottom: 18px;
+  padding: 11px;
   width: 100%;
   border: 1px solid #e7e7e7;
   z-index: 10;
@@ -35,7 +41,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
-    padding: 10px 10px 1px 11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 125px;
   }
 }
 
@@ -62,7 +71,7 @@
 
 .subscribe__description {
   @include font-style(16px, 24px);
-  margin: 0 0 35px;
+  margin: 0 0 25px;
   text-align: center;
 
   @media (min-width: $tablet-width) {

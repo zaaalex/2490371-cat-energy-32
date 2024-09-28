@@ -10,11 +10,30 @@
   }
 }
 
+.page-main__catalog-title {
+  margin-top: 8px;
+  margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 26px;
+  }
+}
+
 .page-main__vendor-invite {
+  background-color: rgba(242, 242, 242, 1);
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-rows: 95px auto 100px;
     grid-template-columns: 1fr 1220px 1fr;
+  }
+}
+
+.page-main__catalog {
+  margin-top: 3px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 48px;
   }
 }
 

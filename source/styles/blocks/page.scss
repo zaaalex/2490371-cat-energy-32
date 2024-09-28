@@ -2,6 +2,10 @@
   &::before {
     display: none;
   }
+
+  @media (max-width: $tablet-width - 1) {
+    border-bottom: 1px solid rgba(217, 217, 217, 1);
+  }
 }
 
 .page__body {

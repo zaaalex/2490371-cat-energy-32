@@ -37,6 +37,13 @@
       background-position: 100%;
       grid-area: 1 / 5 / -1 / -1;
     }
+
+    &.page__catalog {
+      &::before {
+        display: none;
+        grid-area: unset;
+      }
+    }
   }
 }
 
