@@ -71,8 +71,8 @@
     border: none;
     border-top: 1px solid rgba(205, 205, 205, 1);
     border-bottom: 1px solid rgba(205, 205, 205, 1);
-    padding: 0 0 0 0;
-    margin: 0 0 0 0;
+    padding: 0;
+    margin: 0;
   }
 
   &:last-child {
@@ -97,7 +97,7 @@
   }
 }
 
-.catalog-extra__item-container{
+.catalog-extra__item-container {
   @media (min-width: $tablet-width) {
     display: flex;
     height: 16px;
@@ -111,7 +111,7 @@
   @include font-style(16px, 16px, 400, $base-font-color);
   text-transform: uppercase;
   height: 8px;
-  margin: 16px 0 0 0;
+  margin: 16px 0 0;
   display: flex;
   align-content: center;
   align-items: center;
@@ -119,7 +119,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
-    margin: 3px 0 0 0;
+    margin: 3px 0 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -167,7 +167,7 @@
     align-items: center;
     width: 245px;
     height: 288px;
-    margin: 0 0 0 0;
+    margin: 0;
 
     @include background-image-with-gradient("cat-carrier-desktop", rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85));
   }

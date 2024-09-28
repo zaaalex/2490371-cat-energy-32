@@ -44,6 +44,9 @@
 }
 
 .contacts__social-list {
+  display: flex;
+  justify-content: center;
+
   @media (min-width: $tablet-width) {
     padding-right: 125px;
   }
@@ -67,11 +70,6 @@
   @media (min-width: $desktop-width) {
     padding: 0 416px 0 110px;
   }
-}
-
-.contacts__social-list {
-  display: flex;
-  justify-content: center;
 }
 
 .contacts__copyright {
