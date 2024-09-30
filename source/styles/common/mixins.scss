@@ -34,17 +34,16 @@
 }
 
 @mixin background-image-with-gradient($imageName, $gradientStartColor, $gradientEndColor) {
-   background-image:
-      linear-gradient(rgba($gradientStartColor, 0.85), rgba($gradientEndColor, 0.85)),
-      image-set(
-        url("../../images/" + $imageName +"@1x.webp") type ("image/webp") 1x,
-        url("../../images/" + $imageName +"@2x.webp") type ("image/webp") 2x,
-        url("../../images/" + $imageName +"@1x.jpg") type ("image/jpeg") 1x,
-        url("../../images/" + $imageName +"@2x.jpg") type ("image/jpeg") 2x
-      );
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-color: #68b738d9;
+  background-image:
+    linear-gradient(rgba($gradientStartColor, 0.85), rgba($gradientStartColor, 0.85)),
+    image-set(
+        url("../../images/" + $imageName +"@1x.webp") type("image/webp") 1x,
+        url("../../images/" + $imageName +"@2x.jpg") type("image/webp") 2x,
+        url("../../images/" + $imageName +"@1x.jpg") type("image/jpeg") 1x,
+        url("../../images/" + $imageName +"@2x.jpg") type("image/jpeg") 2x
+    );
 }
-
