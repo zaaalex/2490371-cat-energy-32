@@ -31,12 +31,8 @@
   color: #666666;
   transition: background-color 0.3s ease-in-out;
 
-  &:is(:hover, :focus-visible, :focus) {
-    color: #68b738;
-  }
-
   &:active {
-    opacity: 0.6;
+    opacity: 0.3;
   }
 }
 
