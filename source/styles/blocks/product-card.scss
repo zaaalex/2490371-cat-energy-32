@@ -151,6 +151,14 @@
 
 .product-card__description-list {
   margin-bottom: 7px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 7px;
+  }
 }
 
 .product-card__link-title {
